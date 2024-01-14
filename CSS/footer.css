@@ -1,0 +1,127 @@
+.footer {
+	background-color: #1a1f16;
+	flex-shrink: 0;
+}
+
+.footer-content {
+	color: white;
+}
+
+.logo-team {
+	height: 2.5rem;
+}
+
+.logo {
+	padding-top: 3rem;
+}
+
+.footer-item .item-title {
+	font-size: 1.3rem;
+}
+
+.footer-item span {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.footer-item {
+	padding-bottom: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-item p {
+	cursor: pointer;
+}
+
+.footer-item p:hover {
+	color: #94ECBE;
+}
+
+.logo span:hover {
+	cursor: pointer;
+	color: #94ECBE;
+}
+
+.footer-item .item-title {
+	pointer-events: none;
+}
+
+.footer-socialnetworks ul {
+	display: flex;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.footer-socialnetworks li a {
+	color: white;
+	font-size: 0.7rem;
+	padding: 0 2rem 0 0;
+}
+
+.footer-socialnetworks li a:hover {
+	color: #94ECBE;
+}
+
+.footer-copyright {
+	color:#818282;
+	font-size: 0.7rem;
+	pointer-events: none;
+	margin-top: 2rem;
+}
+
+.footer-line {
+	margin: 10px 0;
+	height: 1px;
+	background-color: #797272;
+}
+
+.footer-content-2 {
+	padding: 1rem 10rem;
+}
+
+.footer-license {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/*----- Responsive settings -----*/
+
+/* Small phone responsive */
+@media (max-width: 600px) {
+    [class*="col-"] {
+		width: 100%;
+	}
+
+	.footer-item p {
+		font-size: 1rem;
+	}
+
+	.footer-content-2 {
+		padding: 1rem 3rem;
+	}
+}
+
+/* Portrait tablet/large phone responsive */
+@media (min-width: 600px) {
+	.footer-item p {
+		font-size: 0.7rem;
+	}
+}
+
+/* Landscape tablet/large phone responsive */
+@media (min-width: 1024px) { 
+	.footer-item p {
+		font-size: 1rem;
+	}
+}
+
+/* Desktop/laptop responsive */
+@media (min-width: 1200px) {
+    .footer-item p {
+		font-size: 1rem;
+	}
+}

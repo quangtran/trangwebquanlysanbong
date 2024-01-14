@@ -1,0 +1,219 @@
+.management-background {
+    background-image: url("./Images/admin-background.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.management-header {
+    background-color: black;
+    opacity: 0.85;
+    height: 5rem;
+    color: white;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.management-header img {
+    height: 3rem;
+    padding-right: 0.5rem;
+}
+
+.company-logo {
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+.header-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.management-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.header-control .fa-chevron-down {
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.header-control:hover .fa-chevron-down {
+    transform: rotate(-90deg);
+    transition: all 0.25s ease-in-out 0.2s;
+}
+
+.management-options {
+    padding-left: 2rem;
+    display: none;
+    transition: all 3s ease-in-out 0s;
+}
+
+.header-control:hover .management-options {
+    display: block;
+    transition: all 1s ease-in-out 1.5s;
+}
+
+.management-options a {
+    text-decoration: none;
+    color: white;
+    padding-left: 1rem;
+}
+
+.management-options a:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+.management {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.empty-function-message {
+    background-color: black;
+    opacity: 0.85;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.empty-message {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+
+/*----- Responsive settings -----*/
+
+/* Small phone responsive */
+@media (max-width: 600px) {
+    .management-header {
+        flex-direction: column;
+        height: 13rem;
+    }  
+    
+    .management-title {
+        font-size: 0.95rem;
+    }
+
+    .management-options a {
+        font-size: 0.55rem;
+        padding: 0.2rem 0;
+    }
+
+    .header-control:hover .management-options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .empty-function-message {
+        font-size: 1rem;
+    }
+}
+
+/* Portrait tablet/large phone responsive */
+@media (min-width: 600px) {
+    .management-header {
+        flex-direction: column;
+        height: 15rem;
+    }  
+    
+    .management-options a {
+        font-size: 0.7rem;
+        padding: 0.2rem 0;
+    }
+
+    .management-title {
+        font-size: 1.3rem;
+    }
+
+    .header-control:hover .management-options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .empty-function-message {
+        font-size: 1rem;
+    }
+}
+
+/* Landscape tablet/large phone responsive */
+@media (min-width: 1024px) { 
+	.management-title {
+        font-size: 1.3rem;
+    }
+
+    .management-header {
+        height: 5rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-control:hover .management-options {
+        display: block;
+    }
+
+    .management-options {
+        padding-left: 1rem;
+    }
+
+    .management-options a {
+        font-size: 0.7rem;
+        padding-left: 0.3rem;
+    }
+
+    .empty-function-message {
+        font-size: 1.2rem;
+    }
+}
+
+/* Desktop/laptop responsive */
+@media (min-width: 1200px) {
+    .management-title {
+        font-size: 1.5rem;
+    }
+
+    .management-header {
+        height: 5rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-control:hover .management-options {
+        display: block;
+    }
+
+    .management-options {
+        padding-left: 1rem;
+    }
+
+    .management-options a {
+        font-size: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .empty-function-message {
+        font-size: 1.2rem;
+    }
+}

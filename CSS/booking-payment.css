@@ -1,0 +1,225 @@
+.booking-management-container {
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    opacity: 0.85;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.date-picker label {
+    font-weight: bold;
+}
+
+.date-picker input[type="submit"], .date-picker input[type="text"] {
+    padding: 0.3rem;
+    border: none;
+    border-radius: 2px;
+}
+
+.date-picker input[type="submit"] {
+    background-color: #1d8ac2;
+    color: white;
+    cursor: pointer;
+}
+
+.date-picker input[type="submit"]:hover {
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+.booking-title, .empty-message {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.booking-title {
+    padding: 1rem 0;
+}
+
+.booking-list {
+    overflow-y: scroll;
+    height: 14rem;
+    overflow-x: auto;
+}
+
+.booking-list table, .time-grounds-schedule table {
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.booking-list th, .booking-list td, .time-grounds-schedule td, .time-grounds-schedule th {
+    text-align: left;
+    padding: 0.8rem;
+    white-space: nowrap;
+}
+
+.booking-list th, .time-grounds-schedule th {
+    font-size: 1.1rem;
+}
+
+.management-controller {
+    padding: 0.5rem;
+}
+
+.day-profit span {
+    color: rgb(38, 241, 38);
+}
+
+.controller-and-profit-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controller-button {
+    text-decoration: none;
+    color: white;
+}
+
+.controller-button:hover {
+    opacity: 0.7;
+    transition: all 0.4s;
+}
+
+.controller-button:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.add-booking-form, .edit-booking-form, .delete-booking-form, .pay-booking-form, .pay-booking-history, #addNew, #addOld {
+    display: none;
+}
+
+.old-submit, .new-submit, .edit-submit, .delete-submit, .pay-submit {
+    background-color: #dc3545;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.new-submit {
+    background-color: #20b8b0;
+}
+
+.edit-submit {
+    background-color: rgb(115, 39, 214);
+}
+
+.delete-submit {
+    background-color: #dc3545;
+}
+
+.pay-submit {
+    background-color: #4bbd8c;
+}
+
+.old-submit:hover, .new-submit:hover, .edit-submit:hover, .delete-submit:hover, .pay-submit:hover {
+    opacity: 0.85;
+    transition: all 0.4s;
+}
+
+.booking-error, .booking-success {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+    width: 20rem;
+    display: flex;
+    border-radius: 4px;
+    padding: 0rem 0.7rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0.6rem;
+    right: 0.6rem;
+}
+
+.booking-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.booking-error span, .booking-success span {
+    cursor: pointer;
+}
+
+.booking-error span:hover, .booking-success span:hover {
+    opacity: 0.7;
+}
+
+#addNew input[name="newRealName"], 
+#addNew input[type="tel"], 
+#editBookingForm input[type="tel"],
+#editBookingForm input[name="editRealName"] {
+    width: 11rem;
+}
+
+#payBookingForm input[type="text"] {
+    width: 9rem;
+}
+
+#payBookingForm input[type="number"] {
+    width: 3rem;
+}
+
+.booking-status {
+    font-weight: 500;
+    color: red;
+}
+
+.select2-results .select2-disabled, .select2-results__option[aria-disabled=true] { 
+    display: none;
+}
+
+.time-grounds-status {
+    margin-top: 2rem;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    opacity: 0.85;
+    border-radius: 6px;
+    height: 100%;
+}
+
+.time-grounds-status-title {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.time-grounds-schedule {
+    overflow-x: auto;
+}
+
+.is-using-ground {
+    color: rgb(42, 190, 55);
+}
+
+.is-booking-time {
+    color: yellow;
+}
+
+
+/*----- Responsive settings -----*/
+
+/* Small phone responsive */
+@media (max-width: 600px) {
+    .date-picker input[type="text"] {
+        width: 7rem;
+    }
+
+    .empty-message, .date-picker label {
+        font-size: 0.9rem;
+    }
+}

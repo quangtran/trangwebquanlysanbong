@@ -1,0 +1,237 @@
+.header-nav .nav-items, .header-nav-mobile-down, .header-nav-mobile-up {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-items {
+    padding-left: 0;
+}
+
+.header-nav .nav-items a, .header-nav-mobile-down .nav-items a, .header-nav-mobile-up .nav-items a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.header-nav li {
+    padding: 0.7rem 1.5rem;
+}
+
+.header-nav, .header-nav-mobile-down, .header-nav-mobile-up {
+    position: relative;
+    background-color: #50D96D;
+}
+.header-nav ul a:hover, .header-nav-mobile-down ul a:hover, .header-nav-mobile-up ul a:hover {
+    color: #FDF23D;
+}
+
+.header-banner img {
+   height: 100%;
+}
+
+.user-login img {
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.header-banner {
+    background-color: #d3e3d26e;
+    display: flex;
+    height: 15rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.user-login {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #69ae58ba;
+}
+
+.login {
+    font-weight: 600;
+    padding-right: 0.5rem;
+}
+
+.user-login:hover, .user-detail a:hover {
+    color: #676f65ba;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-text {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 2.7rem;
+    font-style: italic;
+    text-align: right;
+    color: #282d28cc;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ground-type-dropdown {
+    list-style-type: none;
+    padding-inline-start: 0;
+    position: absolute;
+    z-index: 99;
+    top: 100%;
+    display: none;
+}
+
+.ground-type-dropdown li {
+    background-color: #50D96D;
+}
+
+.nav-item-dropdown {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-item-dropdown:hover .ground-type-dropdown {
+    display: block;
+}
+
+.login i {
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}
+
+.user-detail {
+    display: none;
+    position: absolute;
+}
+
+.user-detail a {
+    text-decoration: none;
+    color: #69ae58ba;   
+}
+
+.user-detail div:first-child {
+    padding-top: 1rem;
+}
+
+.login:hover .user-detail {
+    display: block;
+}
+
+.login i {
+    padding-right: 0.5rem;
+}
+
+.clicked-active {
+    display: none;
+}
+
+
+/*----- Responsive settings -----*/
+
+/* Small phone responsive */
+@media (max-width: 600px) {
+    .header-banner {
+        flex-direction: column;
+    }
+
+    .banner img {
+        height: 10rem;
+    }
+
+    .banner-text {
+        font-size: 2rem;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }    
+
+    .ground-type-dropdown {
+        position: relative;
+    }
+
+    .header-banner {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    .login:hover .user-detail {
+        display: flex;
+    }
+
+    .user-detail a div:first-child {
+        margin-right: 1rem;
+    }
+
+    .header-nav {
+        display: none;
+    }
+}
+
+/* Portrait tablet/large phone responsive */
+@media (min-width: 600px) {
+	.header-nav-mobile-down, .header-nav-mobile-up {
+        display: none;
+    }
+
+    .header-nav li {
+        font-size: 0.8rem;
+    }
+
+    .banner img {
+        height: 13rem;
+    }
+
+    .banner-text {
+        font-size: 2rem;
+    }
+}
+
+/* Landscape tablet/large phone responsive */
+@media (min-width: 1024px) { 
+	.header-nav-mobile-down, .header-nav-mobile-up {
+        display: none;
+    }
+
+    .header-nav li {
+        font-size: 1rem;
+    }
+
+    .banner img {
+        height: 100%;
+    }
+
+    .banner-text {
+        font-size: 2.7rem;
+    }
+}
+
+/* Desktop/laptop responsive */
+@media (min-width: 1200px) {
+    .header-nav-mobile-down, .header-nav-mobile-up {
+        display: none;
+    }
+
+    .header-nav li {
+        font-size: 1rem;
+    }
+
+    .banner img {
+        height: 100%;
+    }
+
+    .banner-text {
+        font-size: 2.7rem;
+    }
+}
